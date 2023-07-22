@@ -77,7 +77,7 @@ def handle_ddg(message):
         global is_ddg_running
         if not is_ddg_running:
             msg = bot.send_message(message.chat.id, "Send url of target:")
-            bot.register_next_step_handler(msg, perform_tls)
+            bot.register_next_step_handler(msg, perform_ddg)
         else:
             bot.reply_to(message, "Wait Process.......")
     else:
