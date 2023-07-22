@@ -70,7 +70,7 @@ def perform_freeflood(message):
     is_freeflood_running = False
     bot.send_message(message.chat.id, "Attack Stoped")
     
-@bot.message_handler(commands=['DDG'])
+@bot.message_handler(commands=['ddg'])
 def handle_ddg(message):
     # Verifikasi pengguna VVIP
     if message.from_user.id in vvip_users:
